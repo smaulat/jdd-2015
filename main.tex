@@ -350,6 +350,81 @@
  
 \end{frame}
 
+%%/begin AERES slides
+\begin{frame}
+\frametitle{AriC: Arithmetic and Computing}
+Améliorer le \alert{calcul}, en termes de \alert{performance, d'efficacité} et de \alert{fiabilité.}
+\break
+\begin{center}
+\begin{tikzpicture}[scale=0.1]
+\fill[red!05] (0,1) ellipse (20 and 12);
+\draw[red!80, line width = 2] (0,1) ellipse (20 and 12);
+\draw(0,2) node{Symbolique};
+\fill[green!05] (50,1) ellipse (20 and 12);
+\draw[green!80, line width = 2] (50,1) ellipse (20 and 12);
+\draw(50,2) node{Numérique};
+\draw[very thick,<->] (20,1) -- (30,1);
+\fill[blue!05] (25,-25) ellipse (20 and 12);
+\draw[blue!80, line width = 2] (25,-25) ellipse (20 and 12);
+\draw(25,-25) node{Matériel};
+\draw[very thick,<->] (10,-10) -- (12,-15);
+\draw[very thick,<->] (39,-16) -- (42,-10);
+\end{tikzpicture}
+\end{center}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{AriC: Arithmetic and Computing}
+%Améliorer le \alert{calcul}, en termes de \alert{performance, d'efficacité} et de \alert{fiabilité.}
+\begin{itemize}
+\item algorithmes arithmétiques $\&$ implantation:\\ %(matérielle, logicielle): \\
+  \begin{minipage}{7cm}  
+    \begin{itemize}
+    \item %arithmétique entière et
+      virgule flottante;
+    \item %arithmétique complexe,
+      multi-précision;
+    \item bornes d'erreur fines
+      \end{itemize} \end{minipage}~~
+      \begin{minipage}{3cm}
+      \includegraphics[width=2.9cm]{VisiteAERES2014/Figures/archisin.pdf}
+    \end{minipage}
+
+    \item méthodes d'approximation: \\
+    \begin{minipage}{6.9cm}
+      \begin{itemize}
+            \item uniforme/ponctuelle;
+%            \item certifiée;
+            \item polynomiale/rationnelle
+       \end{itemize}
+         \end{minipage}~~~~
+      \begin{minipage}{3cm}
+      \includegraphics[width=2.5cm]{VisiteAERES2014/Figures/mezzarobba-arith.pdf}
+       \end{minipage}
+    % \item  réseaux euclidiens et cryptographie:\\[-0.2cm]
+    % \begin{minipage}{6.9cm}
+    %    \begin{itemize}
+    %         \item algorithmique des réseaux;
+    %         \item cryptographie reposant sur les réseaux;
+    %     \end{itemize}
+    %   \end{minipage}~~~~
+    %   \begin{minipage}{3cm}
+    %   \includegraphics[width=1.6cm]{VisiteAERES2014/Figures/Resau.jpg}
+    %   \end{minipage}
+     \item calcul certifié et calcul formel:\\
+       \vskip .5em
+      \begin{minipage}{10cm}
+        \begin{itemize}
+       \item algèbre linéaire à coefficients polynomiaux;
+       \item récurrences linéaires à coefficients polynomiaux;
+%       \item arithmétique d'intervalles.
+    \end{itemize}
+  \end{minipage}
+\end{itemize}
+\end{frame}
+%%/end AERES slides
 
 \begin{frame}<1>
   \frametitle{\textcolor{red}{AriC}}
