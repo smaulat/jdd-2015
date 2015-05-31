@@ -655,50 +655,30 @@ Améliorer le \alert{calcul}, en termes de \alert{performance, d'efficacité} et
   \end{tikzpicture}
 \end{frame}
 
-\begin{frame}
-	\frametitle{\textcolor{red}{AriC} --- Error-correcting codes}
 
-\begin{minipage}{0.53\textwidth}
-	\begin{small}
-	Goal:\\
-	Enable \structure{reliable} delivery of data over 
-	\structure{unreliable} communication channels
+\begin{frame}
+	\frametitle{\textcolor{red}{AriC} --- Multivariate interpolation}
+
+	Problem: \structure{\textsc{multivariate polynomial interpolation}}
 
 	\bigskip
-	Strategy:\\
-	add \structure{redundancy} to the message\\
-	add \structure{redundancy} to the message\\
-	add \structure{redundancy} to the message
-	\end{small}
-	\end{minipage}
-	\begin{minipage}{0.45\textwidth}
-	\begin{figure}
-		\centering
-		\includegraphics[width=0.95\textwidth]{JDD2014/figures/codes_applications.pdf}
-	\end{figure}
-	\end{minipage}
+	Applications to:
+	\begin{itemize}
+		\item \alert{Error-correcting codes}\\
+			Enable \structure{reliable} delivery of data over 
+	\structure{unreliable} communication channels \\
+	(add \structure{redundancy} to the message)
+	\item \alert{Crypto: private information retrieval} \\
+		look up information in an \structure{online database} \alert{without} 
+		\alert{letting the database servers} \structure{know (or learn)} 
+		the query terms or responses.
+	\end{itemize}
 \end{frame}
 
 \begin{frame}
-	\frametitle{\textcolor{red}{AriC} --- Error-correcting codes}
+	\frametitle{\textcolor{red}{AriC} --- Tool: structured matrices}
 
-	\begin{figure}
-		\centering
-		\includegraphics[width=\textwidth]{JDD2014/figures/encoding_schema_balls_radius_e.pdf}
-	\end{figure}
-
-	\hspace{-1.1cm}
-	\begin{tabular}{ccc}
-		polynomials of degree $\leqslant k$ & $\xrightarrow{\hspace*{0.5cm}}$ & their evaluation at $x_1,\ldots,x_n$ \\
-		$w = w_0 + w_1 X + \cdots + w_k X^k$ & & $(w(x_1),\ldots,w(x_n))$
-	\end{tabular}
-\end{frame}
-
-
-\begin{frame}
-	\frametitle{\textcolor{red}{AriC} --- (list-)Decoding}
-
-	Find a \alert{solution} of a \alert{structured linear system},
+	Find a \alert{solution} of a (scalar) \alert{structured linear system},
 	\begin{figure}
 		\centering
 		\includegraphics[width=0.8\textwidth]{JDD2014/figures/block_hankel_system.pdf}
@@ -708,14 +688,19 @@ Améliorer le \alert{calcul}, en termes de \alert{performance, d'efficacité} et
 \end{frame}
 
 \begin{frame}
-	\frametitle{\textcolor{red}{AriC} --- (list-)Decoding}
+	\frametitle{\textcolor{red}{AriC} --- Tool: polynomial matrices}
 
-	Find a \alert{short vector} in a (structured) \alert{polynomial lattice},
+	Find a \alert{short vector} in the row space of a \alert{polynomial matrix}\\
+	$=$ \structure{lattice basis reduction} (LLL), over the polynomials
+
+	\medskip
+	Example matrix (for list-decoding Reed-Solomon codes):
 	\begin{figure}
 		\centering
-		\includegraphics[width=0.65\textwidth]{JDD2014/figures/structured_lattice_matrix.pdf}
+		\includegraphics[width=0.55\textwidth]{JDD2014/figures/structured_lattice_matrix.pdf}
 	\end{figure}
 \end{frame}
+
 %
 % Partie Adeline
 %
